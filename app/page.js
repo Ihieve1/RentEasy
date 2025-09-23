@@ -72,7 +72,7 @@ export default function LandingPage() {
                 className="rounded-lg mb-4 h-48 w-full object-cover"
               />
               <h3 className="font-semibold">2BR Apartment in Lagos</h3>
-              <p className="text-green-600 font-bold">$1,200/month</p>
+              <p className="text-green-600 font-bold">#1,200,000/year</p>
               <button className="mt-3 w-full bg-green-600 text-white py-2 rounded">
                 View Details
               </button>
