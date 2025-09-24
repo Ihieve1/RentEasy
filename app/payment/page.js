@@ -1,14 +1,27 @@
+"use client";
+
+import { useSearchParams } from "next/navigation";
 import Navbar from "../../components/Navbar";
 
 export default function PaymentPage() {
+  const searchParams = useSearchParams();
+  const propertyTitle = searchParams.get("title");
+  const propertyPrice = searchParams.get("price");
+
   return (
     <div>
       <Navbar />
       <section className="p-8 max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold mb-6 text-center">Payment</h2>
-        <p className="text-center text-gray-600 mb-8">
-          Complete your payment securely to finalize your booking.
-        </p>
+
+        {/* Show property details if passed from property page */}
+        {propertyTitle && (
+          <div className="mb-6 p-4 bg-gray-100 rounded">
+            <h3 className="font-semibold text-lg">{propertyTitle}</h3>
+            <p className="text-green-600 font-bold">{propertyPrice}</p>
+          </div>
+        )}
+
         <form className="space-y-4 bg-white shadow-md p-6 rounded-xl">
           <input
             type="text"

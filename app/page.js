@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 
 export default function LandingPage() {
   return (
-    <div>
+    <div className="pb-24" >
       <Navbar />
 
       {/* Hero Section */}
