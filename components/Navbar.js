@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo / Brand Name */}
         <a href="/home" className="text-2xl font-bold text-green-700">
-          EasRent
+          EaseRent
         </a>
 
         {/* ✅ Only show Sign Out button if logged in */}

@@ -32,19 +32,7 @@ export default function HomePage() {
           Featured Apartments 🏡
         </h1>
 
-        {/* ✅ Show Sign In only if NOT logged in */}
-        {!user && (
-          <div className="text-center mb-10">
-            <a
-              href="/auth"
-              className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700"
-            >
-              Sign In to See More
-            </a>
-          </div>
-        )}
-
-        {/* Apartments grid */}
+        {/* 🏠 Apartments grid */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {listings.map((house) => (
             <div
