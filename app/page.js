@@ -77,7 +77,7 @@ export default function LandingPage() {
               className="bg-white rounded-xl shadow p-4 hover:shadow-lg transition"
             >
               <img
-                src={`/house${item}.jpg`}
+                src={`https://cdn.ogaagent.com/ogaagent/properties/JW7216_gBWTH_1641461094_.jpg`}
                 alt="house"
                 className="rounded-lg mb-4 h-48 w-full object-cover"
               />
