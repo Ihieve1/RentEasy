@@ -12,24 +12,24 @@ export default function LandingPage() {
         <div className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-black/50"></div>
 
-        <div className="relative z-10 text-white max-w-2xl">
-          <h1 className="text-4xl md:text-6xl font-bold">
+        <div className="relative z-10 text-white max-w-2xl px-4 sm:px-8">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold">
             Find Your Dream Home Today
           </h1>
-          <p className="mt-4 text-lg">
+          <p className="mt-4 text-base sm:text-lg">
             Rent or Buy apartments, houses, and more — all in one place
           </p>
 
           {/* Sign In Button (always shows on Landing Page) */}
           <button
             onClick={() => router.push("/auth")}
-            className="mt-6 bg-green-600 px-6 py-3 text-white font-semibold rounded hover:bg-green-700 transition"
+            className="mt-6 bg-green-600 px-6 py-3 text-white font-semibold rounded hover:bg-green-700 transition w-full sm:w-auto"
           >
             Sign In
           </button>
 
           {/* Search Bar */}
-          <div className="mt-6 bg-white rounded-lg flex items-center overflow-hidden max-w-xl mx-auto">
+          <div className="mt-6 bg-white rounded-lg flex items-center overflow-hidden max-w-xl mx-auto flex-wrap">
             <input
               type="text"
               placeholder="Enter a location..."
@@ -39,7 +39,7 @@ export default function LandingPage() {
               <option>Rent</option>
               <option>Buy</option>
             </select>
-            <button className="bg-orange-500 px-6 py-3 text-white font-semibold">
+            <button className="bg-orange-500 px-6 py-3 text-white font-semibold w-full sm:w-auto">
               Search
             </button>
           </div>
@@ -49,7 +49,7 @@ export default function LandingPage() {
       {/* Categories */}
       <section className="p-8 text-center">
         <h2 className="text-2xl font-bold mb-6">Browse by Category</h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div className="bg-green-600 text-white p-8 rounded-xl shadow hover:scale-105 transition">
             <h3 className="text-xl font-semibold mb-2">For Rent</h3>
             <p>Affordable apartments and houses for rent.</p>
@@ -70,7 +70,7 @@ export default function LandingPage() {
         <h2 className="text-2xl font-bold mb-6 text-center">
           Featured Listings
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {[1, 2, 3].map((item) => (
             <div
               key={item}
