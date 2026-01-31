@@ -39,7 +39,7 @@ export default function LandingPage() {
               <option>Rent</option>
               <option>Buy</option>
             </select>
-            <button className="bg-orange-500 px-6 py-3 text-white font-semibold w-full sm:w-auto">
+            <button className="bg-orange-500 px-6 py-3 text-white font-semibold sm:w-auto">
               Search
             </button>
           </div>
@@ -50,15 +50,15 @@ export default function LandingPage() {
       <section className="p-8 text-center">
         <h2 className="text-2xl font-bold mb-6">Browse by Category</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div className="bg-green-600 text-white p-8 rounded-xl shadow hover:scale-105 transition">
+          <div className="bg-green-600 text-white p-8 rounded-xl shadow hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
             <h3 className="text-xl font-semibold mb-2">For Rent</h3>
             <p>Affordable apartments and houses for rent.</p>
           </div>
-          <div className="bg-orange-500 text-white p-8 rounded-xl shadow hover:scale-105 transition">
+          <div className="bg-orange-500 text-white p-8 rounded-xl shadow hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
             <h3 className="text-xl font-semibold mb-2">For Sale</h3>
             <p>Buy your next home with ease.</p>
           </div>
-          <div className="bg-gray-700 text-white p-8 rounded-xl shadow hover:scale-105 transition">
+          <div className="bg-gray-700 text-white p-8 rounded-xl shadow hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
             <h3 className="text-xl font-semibold mb-2">Luxury</h3>
             <p>Discover premium listings with top features.</p>
           </div>
@@ -74,7 +74,7 @@ export default function LandingPage() {
           {[1, 2, 3].map((item) => (
             <div
               key={item}
-              className="bg-white rounded-xl shadow p-4 hover:shadow-lg transition"
+              className="bg-white rounded-xl shadow p-4 hover:shadow-lg transition duration-300 ease-in-out"
             >
               <img
                 src={`https://cdn.ogaagent.com/ogaagent/properties/JW7216_gBWTH_1641461094_.jpg`}
